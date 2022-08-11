@@ -1,0 +1,35 @@
+type Query {
+  # Case One
+  numbersCaseOneNull: [Int]
+  numbersCaseOneEmptyArray: [Int]
+  numbersCaseOneIntArray: [Int]
+  numbersCaseOneNullArray: [Int]
+
+  # Case Two
+  numbersCaseTwoNull: [Int]!
+  numbersCaseTwoEmptyArray: [Int]!
+  numbersCaseTwoIntArray: [Int]!
+  numbersCaseTwoNullArray: [Int]!
+
+  # Case Three
+  numbersCaseThreeNull: [Int!]!
+  numbersCaseThreeEmptyArray: [Int!]!
+  numbersCaseThreeIntArray: [Int!]!
+  numbersCaseThreeNullArray: [Int!]!
+
+  # Real Use Case One
+  userCaseOne: UserOne!
+
+  # Real Use Case Two
+  userCaseTwo: UserTwo!
+}
+
+type UserOne {
+  nameOne: String!
+  photoOne: String!
+}
+
+type UserTwo {
+  nameTwo: String!
+  photoTwo: String
+}
